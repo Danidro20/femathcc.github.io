@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {}
 
     try {
-      const res = await fetch('data/projects.json');
+      const res = await fetch('data/publicaciones.json');
       const data = await res.json();
       const existingIds = new Set(data.map(p => p.id));
       const customFiltered = localData.filter(p => !existingIds.has(p.id));

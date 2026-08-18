@@ -1,0 +1,22 @@
+[
+  {
+    "id": "001",
+    "title": "Similaridad de los espacios de características generados por una red neuronal en Continual Learning",
+    "authors": ["Eduards Alexis Mendez Chipatecua", "Juan Carlos Galvis Arrieta"],
+    "university": "Universidad Nacional de Colombia",
+    "faculty": "Facultad de Ciencias",
+    "degree": "Ciencias de la Computación",
+    "category": "Inteligencia Artificial",
+    "year": 2025,
+    "date": "2025-06-15",
+    "tags": ["Deep Learning"],
+    "mediaType": "canvas-nn",
+    "mediaImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "codeUrl": "https://github.com/grupo-investigacion/retinopatia-ia-mobile",
+    "doi": "10.5281/zenodo.8492011",
+    "views": 1420,
+    "citations": 22,
+    "abstract": "El aprendizaje continuo plantea el reto de incorporar información nueva sin sacrificar el conocimiento adquirido, fenómeno conocido como olvido catastrófico. En este trabajo exploramos cómo evolucionan los espacios de características internos de una red neuronal profunda a lo largo de varias etapas de entrenamiento y bajo diferentes estrategias de mitigación del olvido. Para ello, empleamos una arquitectura ResNet-18 entrenada secuencialmente sobre CIFAR-10, comparando dos enfoques: fine-tuning puro y replay con buffer de ejemplos. Medimos la similaridad de subespacios de activaciones mediante ángulos principales tras aplicar PCA en cada capa. Nuestros resultados revelan que las capas más próximas a la entrada mantienen subespacios casi invariantes, mientras que las capas profundas sufren cambios sustanciales tras cada nueva tarea."
+  }
+]
