@@ -2,21 +2,100 @@
   {
     "id": "001",
     "title": "Similaridad de los espacios de características generados por una red neuronal en Continual Learning",
-    "authors": ["Eduards Alexis Mendez Chipatecua", "Juan Carlos Galvis Arrieta"],
+    "subtitle": "Análisis de la evolución de subespacios de activaciones y mitigación del olvido catastrófico en arquitecturas ResNet-18.",
+    "authors": [
+      "Eduards Alexis Mendez Chipatecua",
+      "Juan Carlos Galvis Arrieta"
+    ],
     "university": "Universidad Nacional de Colombia",
     "faculty": "Facultad de Ciencias",
     "degree": "Ciencias de la Computación",
     "category": "Inteligencia Artificial",
     "year": 2025,
     "date": "2025-06-15",
-    "tags": ["Deep Learning"],
+    "tags": [
+      "Continual Learning",
+      "Deep Learning",
+      "Catastrophic Forgetting",
+      "PCA",
+      "ResNet-18",
+      "Subspace Similarity"
+    ],
     "mediaType": "canvas-nn",
-    "mediaImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80",
-    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "codeUrl": "https://github.com/grupo-investigacion/retinopatia-ia-mobile",
-    "doi": "10.5281/zenodo.8492011",
+    "mediaImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=80",
+    "pdfUrl": "PDFs/Incremental_Learning_260811_214508.pdf",
+    "codeUrl": "https://github.com/eguar11011/Continual",
+    "doi": "10.5281/zenodo.10849201",
     "views": 1420,
     "citations": 22,
+    "mathSnippet": "\\text{Sim}(X, Y) = \\frac{1}{K} \\sum_{i=1}^K \\cos^2 \\theta_i = \\frac{1}{K} \\sum_{i=1}^K \\sigma_i^2",
     "abstract": "El aprendizaje continuo plantea el reto de incorporar información nueva sin sacrificar el conocimiento adquirido, fenómeno conocido como olvido catastrófico. En este trabajo exploramos cómo evolucionan los espacios de características internos de una red neuronal profunda a lo largo de varias etapas de entrenamiento y bajo diferentes estrategias de mitigación del olvido. Para ello, empleamos una arquitectura ResNet-18 entrenada secuencialmente sobre CIFAR-10, comparando dos enfoques: fine-tuning puro y replay con buffer de ejemplos. Medimos la similaridad de subespacios de activaciones mediante ángulos principales tras aplicar PCA en cada capa. Nuestros resultados revelan que las capas más próximas a la entrada mantienen subespacios casi invariantes, mientras que las capas profundas sufren cambios sustanciales tras cada nueva tarea."
+  },
+  {
+    "id": "002",
+    "title": "The Growing Importance of Energy-Aware Numerical Precision in Scientific Computing",
+    "subtitle": "Impacto de la precisión numérica y formatos aritméticos en el consumo de energía y tiempo de ejecución usando Julia e Intel RAPL.",
+    "authors": [
+      "Eduards Chipatecua",
+      "Juan Carlos Galvis Arrieta",
+      "Francisco Gómez"
+    ],
+    "university": "Universidad Nacional de Colombia",
+    "faculty": "Facultad de Ciencias - Departamento de Matemáticas",
+    "degree": "Cálculo Científico y Matemáticas Aplicadas",
+    "category": "Computación Científica",
+    "year": 2025,
+    "date": "2025-08-11",
+    "tags": [
+      "Energy-Aware Computing",
+      "Numerical Precision",
+      "Floating-Point Arithmetic",
+      "Scientific Computing",
+      "Julia",
+      "Sustainability",
+      "RAPL",
+      "LU Factorization"
+    ],
+    "mediaType": "canvas-wave",
+    "mediaImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+    "pdfUrl": "PDFs/Chipatecua_Galvis_GomezPDF_260811_214626.pdf",
+    "codeUrl": "https://github.com/eguar11011/NumPrecEnergy",
+    "doi": "10.5281/zenodo.10849202",
+    "views": 890,
+    "citations": 15,
+    "mathSnippet": "x = (-1)^s(1+m)2^{e-\\Delta}, \\quad x = -s 2^{n-1} + \\sum_{i=0}^{n-2} a_i 2^i",
+    "abstract": "The rapid expansion of scientific computing, artificial intelligence, and large-scale data processing has transformed the landscape of computational efficiency. As computational resources become more powerful, their energy footprint grows proportionally, demanding a new paradigm in which energy efficiency is considered alongside numerical accuracy and scalability. In this work, we analyze the relationship between numerical precision and energy consumption in fundamental arithmetic operations, with a focus on CPU-based measurements using the Running Average Power Limit (RAPL) interface available on modern Intel and AMD processors. Three numerical experiments were conducted: (i) basic arithmetic operations on integer and floating-point types; (ii) prime number generation comparing exact (integer) and approximate (floating-point) workloads; and (iii) LU factorization with single, double, and mixed precision, including iterative refinement. The results show that floating-point arithmetic consistently consumes more energy than integer arithmetic, with the exception of division. In the LU tests, single precision achieved the best trade-off between accuracy and energy efficiency, whereas mixed-precision refinement on CPU introduced additional overhead without improving performance. These findings underscore the need to integrate energy consumption into the evaluation of numerical algorithms and motivate a reformulation of classical computational complexity theory."
+  },
+  {
+    "id": "003",
+    "title": "Gaussian Splatting: Numerical Foundations and Performance Evaluation",
+    "subtitle": "Fundamentos numéricos, análisis de sensibilidad de muestreo SfM, hiperparámetros y evaluación de rendimiento en tiempo real para 3DGS.",
+    "authors": [
+      "Nicolas Duque Molina"
+    ],
+    "university": "Universidad Nacional de Colombia — Sede Bogotá",
+    "faculty": "Facultad de Ciencias - Departamento de Matemáticas",
+    "degree": "Pregrado - Trabajo de Grado en Matemáticas",
+    "category": "Computación Gráfica",
+    "year": 2025,
+    "date": "2025-12-12",
+    "tags": [
+      "3D Gaussian Splatting",
+      "Photogrammetry",
+      "Structure-from-Motion (SfM)",
+      "Novel View Synthesis",
+      "Computer Graphics",
+      "GPU Rendering",
+      "COLMAP"
+    ],
+    "mediaType": "canvas-quantum",
+    "mediaImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
+    "pdfUrl": "PDFs/TesisGaussianSplatting.pdf",
+    "codeUrl": "https://nikoduque-doo.github.io/Gaussian-Splatting-Thesis-Materials/",
+    "doi": "10.5281/zenodo.10849203",
+    "views": 2150,
+    "citations": 34,
+    "mathSnippet": "G(x) = \\exp\\left(-\\frac{1}{2}(x-\\mu)^T\\Sigma^{-1}(x-\\mu)\\right), \\quad C = \\sum_{i=1}^N T_i \\alpha'_i c_i",
+    "abstract": "3D Gaussian Splatting (3DGS) offers a powerful alternative to traditional photogrammetry, yet its sensitivity to input data and hyperparameters remains underexplored. This work systematically evaluates the 3DGS pipeline to analyze the impact of sampling rates and training parameters on reconstruction fidelity and efficiency. Contrary to the assumption that higher data density linearly improves quality, our results reveal a non-monotonic relationship where excessive redundancy destabilizes the Structure-from-Motion process. Furthermore, we demonstrate that exhaustive optimization strategies are inefficient; extended training durations lead to 'geometric bloat', a phenomenon where model size increases disproportionately to visual gains and compromises real-time performance on consumer hardware. We also validate the necessity of anisotropic covariance for preserving high-frequency details to resolve discrepancies between quantitative metrics and perceptual quality. Ultimately, this work identifies an optimal configuration that balances visual fidelity with storage and rendering constraints to provide a validated framework for the efficient deployment of 3DGS."
   }
 ]

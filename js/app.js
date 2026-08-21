@@ -192,10 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (state.filters.query) {
       const q = state.filters.query.toLowerCase();
       list = list.filter(p => 
-        p.title.toLowerCase().includes(q) ||
-        p.subtitle.toLowerCase().includes(q) ||
-        p.authors.some(a => a.toLowerCase().includes(q)) ||
-        p.category.toLowerCase().includes(q) ||
+        (p.title && p.title.toLowerCase().includes(q)) ||
+        (p.subtitle && p.subtitle.toLowerCase().includes(q)) ||
+        (p.abstract && p.abstract.toLowerCase().includes(q)) ||
+        (Array.isArray(p.authors) ? p.authors.some(a => a.toLowerCase().includes(q)) : (p.authors && p.authors.toLowerCase().includes(q))) ||
+        (p.category && p.category.toLowerCase().includes(q)) ||
         (p.tags || []).some(t => t.toLowerCase().includes(q)) ||
         (p.mathSnippet && p.mathSnippet.toLowerCase().includes(q))
       );
